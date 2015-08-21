@@ -16,7 +16,7 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('styles', function(){
-  gulp.src(['dev/**/*.scss'])
+  gulp.src(['dev/scss/*.scss'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
@@ -33,7 +33,7 @@ gulp.task('deploy', function() {
 
 gulp.task('default', ['browser-sync'], function(){
   gulp.watch("dev/**/*.html", ['bs-reload']);
-  gulp.watch("dev/**/*.scss", ['styles']);
+  gulp.watch("dev/scss/*.scss", ['styles']);
   gulp.watch("dev/**/*.js", ['bs-reload']);
   gulp.watch("*.html", ['bs-reload']);
 });
