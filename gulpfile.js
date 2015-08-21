@@ -32,7 +32,8 @@ gulp.task('deploy', function() {
 	});
 
 gulp.task('default', ['browser-sync'], function(){
+  gulp.watch("dev/**/*.html", ['bs-reload']);
   gulp.watch("dev/**/*.scss", ['styles']);
-  gulp.watch("*.html", ['bs-reload']);
   gulp.watch("dev/**/*.js", ['bs-reload']);
+  gulp.watch("*.html", ['bs-reload']);
 });

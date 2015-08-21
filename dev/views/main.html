@@ -1,1 +1,12 @@
 <a href="#/search">Search</a>
+<h2>Top Tracks</h2>
+<ol class="top-tracks">
+	<li class="top-track" ng-repeat="topTrack in topTracks.items">
+		<ul>
+			<li> <div ng-repeat="artist in topTrack.track.artists">artist: {{ artist.name }} </div></li>
+			<li>album: {{ topTrack.track.album.name }}</li>
+			<li>track: {{ topTrack.track.name }}</li>
+			<li>popularity: {{ topTrack.track.popularity }}</li>
+		</ul> 
+	</li>
+</ol>
