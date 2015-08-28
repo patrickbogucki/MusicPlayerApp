@@ -3648,5 +3648,4 @@ app.controller('MainController', ['$scope', function($scope) {
   "previous" : null,
   "total" : 50
 };
-$('.top-track').height($('.top-track').width());
 }]);
