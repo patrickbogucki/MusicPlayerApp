@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/patrickbogucki/MusicPlayerApp",
   "devDependencies": {
+    "angular": "^1.4.4",
+    "angular-route": "^1.4.4",
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
     "gulp-plumber": "^1.0.1",

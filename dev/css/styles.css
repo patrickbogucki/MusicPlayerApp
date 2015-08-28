@@ -1,13 +1,18 @@
+body {
+  margin: 0px; }
+
+.top-tracks {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
 .top-track {
   float: left;
-  width: 100%;
-  background-size: cover; }
-  @media (min-width: 600px) {
-    .top-track {
-      width: 50%; } }
-  @media (min-width: 900px) {
-    .top-track {
-      width: 33%; } }
-  @media (min-width: 1200px) {
-    .top-track {
-      width: 25%; } }
+  width: 25%;
+  padding-top: 25%;
+  background-size: cover;
+  position: relative; }
+  .top-track ul {
+    position: absolute;
+    top: 0;
+    z-index: 10000; }
