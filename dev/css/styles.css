@@ -3,11 +3,15 @@ body {
 
 .top-tracks {
   list-style: none;
+<<<<<<< Updated upstream
   margin: 0px;
+=======
+>>>>>>> Stashed changes
   padding: 0px; }
 
 .top-track {
   float: left;
+<<<<<<< Updated upstream
   width: 25%;
   padding-top: 25%;
   background-size: cover;
@@ -16,3 +20,17 @@ body {
     position: absolute;
     top: 0;
     z-index: 10000; }
+=======
+  width: 100%;
+  height: 300px;
+  background-size: cover; }
+  @media (min-width: 600px) {
+    .top-track {
+      width: 50%; } }
+  @media (min-width: 900px) {
+    .top-track {
+      width: 33%; } }
+  @media (min-width: 1200px) {
+    .top-track {
+      width: 25%; } }
+>>>>>>> Stashed changes

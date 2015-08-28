@@ -1,4 +1,5 @@
 app.controller('MainController', ['$scope', function($scope) {
+	console.log('hi');
 	$scope.header = 'Music Player'; 
 	$scope.topTracks = {
   "href" : "https://api.spotify.com/v1/users/spotify/playlists/5FJXhjdILmRA2z5bvz4nzf/tracks?offset=0&limit=100",
@@ -3647,4 +3648,5 @@ app.controller('MainController', ['$scope', function($scope) {
   "previous" : null,
   "total" : 50
 };
+$('.top-track').height($('.top-track').width());
 }]);
