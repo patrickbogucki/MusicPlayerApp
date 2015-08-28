@@ -5,7 +5,6 @@
 		<button>Search</button>
 		<div ng-click="getArtists()">Click Me!</div>
 		<ol id="search-artists">
-		<li>test</li>
 			<li class="search-artist" ng-click="remove($event)" ng-repeat="artist in artists">{{ artist.name }}
 			<ul>
 				<!-- <li ng-repeat="artist.name"></li> -->
@@ -15,5 +14,4 @@
 		<div class="error-msg">{{ errorMsg }}</div>
 	</label>
 </form>
-<input type="text">
 <a href="#/">Back</a>
